@@ -37,6 +37,7 @@ const fetchUsersFailure = error => {
 };
 
 // async action creator
+// with redux-thunk, action creator can return a function instead of an action
 const fetchUsers = () => {
   return function(dispatch) {
     dispatch(fetchUsersRequest());
